@@ -4,6 +4,13 @@ body {
   line-height: 1.6;
 }
 
+main{
+  width: 600px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;  
+}
+
 header {
   background: #f0f0f0;
   padding: 10px;
