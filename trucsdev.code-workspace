@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../OneDrive/Bureau/trucsdev"
+		},
+		{
+			"path": "../OneDrive/Bureau/exo"
+		},
+		{
+			"path": "../OneDrive/Bureau/yatze"
+		},
+		{
+			"path": "../OneDrive/Bureau/plusoumoins"
+		},
+		{
+			"path": "../OneDrive/Bureau/trdvd"
+		},
+		{
+			"path": "../OneDrive/Bureau/nouveau"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "nouveau"
+	}
+}
