@@ -6,12 +6,15 @@ body {
 
 main{
   width: 600px;
-  margin: 20px;
+  margin: 0 auto;
   padding: 20px;
   border: 1px solid #ccc;  
 }
 
 header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   background: #f0f0f0;
   padding: 10px;
   border-radius: 8px;
