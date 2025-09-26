@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="sign-up.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="left">
+      <img src="https://picsum.photos/300/200" alt="Image aléatoire" />
+    </div>
+    <div class="right">
+      <img src="https://picsum.photos/300/200" alt="Image aléatoire" />
+      <h1>Créer un compte</h1>
+      <p>Veuillez remplir le formulaire</p>
+      <form>
+        <div class="name">
+          <label for="nom">Nom: </label>
+          <input id="nom" name="nom" type="text" required />
+          <label for="prenom">Prénom: </label>
+          <input id="prenom" name="prenom" type="text" required />
+        </div>
+
+        <div class="email">
+          <label for="email">Email: </label>
+          <input id="email" name="email" type="email" required />
+          <label for="" class="telephone">Téléphone: </label>
+          <input id="telephone" name="telephone" type="number" required />
+        </div>
+
+        <div class="password">
+          <label for="password">Password: </label>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            required
+            minlength="8"
+          />
+
+          <label for="confirm">Confirmer: </label>
+          <input
+            id="confirm"
+            name="confirm"
+            type="password"
+            required
+            minlength="8"
+          />
+        </div>
+
+        <button type="submit">Créer un compte</button>
+        <p>Déjà un compte ? Connectez-vous</p>
+
+      </form>
+    </div>
+  </body>
+</html>

@@ -83,52 +83,56 @@
         </div>
       </section>
 
-      <form action="" method="post">
-        <div class="form-group">
-        <label for="nom">Nom: </label>
-        <input id="nom" type="text" required>
-        </div>
+<form action="" method="post">
+  <div class="form-group">
+    <label for="nom">Nom: </label>
+    <input id="nom" name="nom" type="text" required />
+  </div>
 
-        <div class="form-group">
-        <label for="prenom">Prenom: </label>
-        <input id="prenom" type="text" required>
-        </div>
+  <div class="form-group">
+    <label for="prenom">Prénom: </label>
+    <input id="prenom" name="prenom" type="text" required />
+  </div>
 
-        <div class="form-group">
-        <label for="email">Email: </label>
-        <input id="email" type="email" required />
-        </div>
+  <div class="form-group">
+    <label for="email">Email: </label>
+    <input id="email" name="email" type="email" required />
+  </div>
 
-        <div class="form-group">
-        <label for="password">Password: </label>
-        <input id="password" type="password" required />
-        <label for="confirm">Confirmer</label>
-        <input type="password" id="confirm" name="confirm-ouipassword">
-      </div>
-      
-        <div class="form-group">
-        <label for="birthday">Date de naissance: </label>
-        <input id="birthday" type="date" required />
-        </div>
+  <div class="form-group">
+    <label for="password">Password: </label>
+    <input id="password" name="password" type="password" required minlength="8" />
 
-        <fieldset>
-          <legend>Genre</legend>
-        <label for="homme">Homme</label>
-        <input id="homme" name="genre" type="radio" value="homme" />
-        <label for="femme">Femme</label>
-        <input id="femme" name="genre" type="radio" value="femme"/>
-        <label for="autre">Autre</label>
-        <input id="autre" name="genre" type="radio" value="autre"/>
-        </fieldset>
+    <label for="confirm">Confirmer: </label>
+    <input id="confirm" name="confirm" type="password" required minlength="8" />
+  </div>
 
-        <div class="form-group">
-        <label for="accept">Accepter les conditions</label>
-        <input id="accept" type="checkbox" value="ok"/>
-        </div>
+  <div class="form-group">
+    <label for="birthday">Date de naissance: </label>
+    <input id="birthday" name="birthday" type="date" required />
+  </div>
 
-        <button type="submit">Envoyer</button>
+  <fieldset>
+    <legend>Genre</legend>
 
-      </form>
+    <label for="homme">Homme</label>
+    <input id="homme" name="genre" type="radio" value="homme" />
+
+    <label for="femme">Femme</label>
+    <input id="femme" name="genre" type="radio" value="femme" />
+
+    <label for="autre">Autre</label>
+    <input id="autre" name="genre" type="radio" value="autre" />
+  </fieldset>
+
+  <div class="form-group">
+    <label for="accept">Accepter les conditions</label>
+    <input id="accept" name="accept" type="checkbox" value="ok" required />
+  </div>
+
+  <button type="submit">Envoyer</button>
+</form>
+
     </main>
     <button id="back">↑ Haut</button>
     <footer>© 2025 Jahrdin</footer>

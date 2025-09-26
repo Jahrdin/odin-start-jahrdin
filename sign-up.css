@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.left {
+    flex: 1;
+    max-width: 20rem;    
+}
+
+.right {
+    flex: 2;
+}
+
+.name,
+.email,
+.password {
+    display: flex;
+    flex: 1;
+}
+
+.right button {
+  margin: 1rem auto;
+}
+
+
+form label {
+    width: 120px;
+}
+
+@media (max-width: 600px) {
+
+    .name,
+    .email,
+    .password {
+        flex-direction: column;
+    }
+}
