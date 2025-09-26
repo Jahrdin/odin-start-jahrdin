@@ -5,28 +5,85 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header>
-      <h1>Bienvenue</h1>
+      <h1><a href="index.html" id="logo">Mon Logo</a></h1>
       <nav>
-        <a href="index.html">Accueil</a> |
-        <a href="about.html">À propos</a>
-        <a href="homepage.html">Homepage</a>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="homepage.html">Homepage</a></li>
+        </ul>
       </nav>
     </header>
 
     <main>
-      <div id="logo">Mon Logo</div>
-      <h2>Mes passions</h2>
-      <ul>
-        <li>Musique</li>
-        <li>Skate</li>
+      <section class="hero">
+        <h2>Bienvenue</h2>
+        <p>
+          Un site simple pour apprendre les bases du web avec The Odin Project.
+        </p>
+        <button>></button>
+      </section>
 
-      </ul>
+      <section class="cards">
+        <div class="card">
+          <h3>Musique</h3>
+          <p>Créer, partager et expérimenter autour du son.</p>
+          <span class="badge">New</span>
+        </div>
+        <div class="card">
+          <h3>Dessin/illu</h3>
+          <p>Différents travaux</p>
+        </div>
+        <div class="card">
+          <h3>Pouet</h3>
+          <p>Pouet pouet</p>
+        </div>
+      </section>
+
+      <section id="gallery">
+        <h2>Gallerie</h2>
+        <div class="item">
+          <h3>titre</h3>
+          <img src="https://picsum.photos/300/200" alt="Image aléatoire" />
+        </div>
+        <div class="item">
+          <h3>titre</h3>
+          <img src="https://picsum.photos/300/200" alt="Image aléatoire" />
+        </div>
+        <div class="item">
+          <h3>titre</h3>
+          <img src="https://picsum.photos/300/200" alt="Image aléatoire" />
+        </div>
+        <div class="item">
+          <h3>titre</h3>
+          <img src="https://picsum.photos/300/200" alt="Image aléatoire" />
+        </div>
+        <div class="item">
+          <h3>titre</h3>
+          <img src="https://picsum.photos/300/200" alt="Image aléatoire" />
+        </div>
+        <div class="item">
+          <h3>titre</h3>
+          <img src="https://picsum.photos/300/200" alt="Image aléatoire" />
+        </div>
+        <div class="item">
+          <h3>titre</h3>
+          <img src="https://picsum.photos/300/200" alt="Image aléatoire" />
+        </div>
+        <div class="item">
+          <h3>titre</h3>
+          <img src="https://picsum.photos/300/200" alt="Image aléatoire" />
+        </div>
+        <div class="item">
+          <h3>titre</h3>
+          <img src="https://picsum.photos/300/200" alt="Image aléatoire" />
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <p>&copy; 2025 Jahrdin</p>
-    </footer>
+    <footer>© 2025 Jahrdin</footer>
   </body>
 </html>
