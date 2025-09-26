@@ -1,15 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 1em;
   line-height: 1.6;
 }
 
-main{
+main {
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
   padding: 1em;
-  border: 1px solid #ccc;  
+  border: 1px solid #ccc;
 }
 
 header {
@@ -35,7 +39,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.hero{
+.hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,7 +49,7 @@ nav a:hover {
   gap: 1rem;
 }
 
-.cards{
+.cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 1.5rem;
@@ -54,7 +58,7 @@ nav a:hover {
   gap: 1rem;
 }
 
-.card{
+.card {
   position: relative;
   border: 0.2rem solid #5dadbe;
   padding: 1rem;
@@ -64,10 +68,10 @@ nav a:hover {
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.badge{
+.badge {
   position: absolute;
   top: 5px;
   right: 5px;
@@ -84,18 +88,18 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
-#gallery{
+#gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
 
-#gallery img{
+#gallery img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.item{
+.item {
   border: 0.2rem solid black;
   padding: 1rem;
   background: #eee;
@@ -103,6 +107,56 @@ nav a:hover {
   grid-auto-rows: minmax(150px, auto);
   gap: 1rem;
 }
+
+#back {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1000;
+
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+
+  background: #5dadbe;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#back:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input,
+select,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #5dadbe;
+  box-shadow: 0 0 4px rgba(93, 173, 190, 0.5);
+}
+
 
 footer {
   margin-top: 20px;
@@ -112,24 +166,24 @@ footer {
 
 @media (max-width: 600px) {
 
-  body{
+  body {
     font-size: 0.8rem;
   }
 
-  .cards{
+  .cards {
     display: grid;
     grid-template-columns: 1fr;
     padding: 1.5rem;
   }
 
-  #gallery{
-  display: grid;
-  grid-template-columns: 1fr;
-}
+  #gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
   nav {
-  flex-direction: column;
-  gap: 0.5em;
-}
+    flex-direction: column;
+    gap: 0.5em;
+  }
 
 }

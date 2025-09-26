@@ -24,7 +24,7 @@
         <p>
           Un site simple pour apprendre les bases du web avec The Odin Project.
         </p>
-        <button>></button>
+        <button>>Wesh</button>
       </section>
 
       <section class="cards">
@@ -82,8 +82,55 @@
           <img src="https://picsum.photos/300/200" alt="Image aléatoire" />
         </div>
       </section>
-    </main>
 
+      <form action="" method="post">
+        <div class="form-group">
+        <label for="nom">Nom: </label>
+        <input id="nom" type="text" required>
+        </div>
+
+        <div class="form-group">
+        <label for="prenom">Prenom: </label>
+        <input id="prenom" type="text" required>
+        </div>
+
+        <div class="form-group">
+        <label for="email">Email: </label>
+        <input id="email" type="email" required />
+        </div>
+
+        <div class="form-group">
+        <label for="password">Password: </label>
+        <input id="password" type="password" required />
+        <label for="confirm">Confirmer</label>
+        <input type="password" id="confirm" name="confirm-ouipassword">
+      </div>
+      
+        <div class="form-group">
+        <label for="birthday">Date de naissance: </label>
+        <input id="birthday" type="date" required />
+        </div>
+
+        <fieldset>
+          <legend>Genre</legend>
+        <label for="homme">Homme</label>
+        <input id="homme" name="genre" type="radio" value="homme" />
+        <label for="femme">Femme</label>
+        <input id="femme" name="genre" type="radio" value="femme"/>
+        <label for="autre">Autre</label>
+        <input id="autre" name="genre" type="radio" value="autre"/>
+        </fieldset>
+
+        <div class="form-group">
+        <label for="accept">Accepter les conditions</label>
+        <input id="accept" type="checkbox" value="ok"/>
+        </div>
+
+        <button type="submit">Envoyer</button>
+
+      </form>
+    </main>
+    <button id="back">↑ Haut</button>
     <footer>© 2025 Jahrdin</footer>
   </body>
 </html>
