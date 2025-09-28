@@ -1,53 +1,58 @@
-# odin-start-jahrdin
-# Odin Project – Suivi de progression (Jahrdin)
-
-## 🎯 Méthode éducative à respecter
-- **Pas de code donné directement**, sauf si je le demande explicitement.  
-- Me guider par des **questions, indices et explications claires**.  
-- Objectif : **apprentissage actif** (je tape, je cherche, je comprends).  
-- Toujours appliquer des techniques de **mémorisation et d’ancrage** :
-  - Reformuler ce que j’ai appris.
-  - Répétition espacée (revoir les notions clés).
-  - Récupération active (poser des petites questions pour vérifier que j’ai retenu).
-- On suit **strictement le cursus The Odin Project**, sans sauter d’étapes.  
+# odin-start-jahrdin  
+*Suivi du parcours The Odin Project (Jahrdin)*  
 
 ---
 
-## ✅ Progression actuelle
-- **HTML + CSS de base** ✔️  
-- **Flexbox** ✔️  
-- **Grid** ✔️  
-- **Positioning** (relative, absolute, fixed, sticky, z-index) ✔️ (vu et pratiqué)  
-- **Forms** ✔️  
-  - Inputs `text`, `email`, `password`, `date`, `checkbox`, `radio` ✔️  
-  - Labels associés ✔️  
-  - Groupes avec `fieldset` et `legend` ✔️  
-  - Mise en forme de base avec CSS ✔️  
+## 🎯 Méthode éducative & principes  
+- **Pas de code donné sauf si je le demande explicitement.**  
+- Je progresse via des **questions / indices / feedback guidé**.  
+- Objectif : **apprendre activement**, pas copier-coller.  
+- Privilégier la **récupération active**, la reformulation et l’ancrage.  
+- Respect strict du cursus TOP, sans saut inutile.  
 
 ---
 
-## 🚀 Project: Sign-Up Form (en cours)
-- Layout split gauche/droite avec Flexbox ✔️  
-- Section droite contenant : image, titre, texte et formulaire ✔️  
-- Formulaire structuré en 3 blocs (Nom/Prénom, Email/Téléphone, Mot de passe/Confirmation) ✔️  
-- Responsive OK (colonne unique en mobile) ✔️  
-- Bouton centré ✔️  
-- Validation HTML5 basique (`required`, `type`, `minlength`) ✔️  
-- ⚡ Prochaine étape : Validation custom en **JavaScript** (mot de passe = confirmation) + feedback visuel et textuel.  
+## ✅ Progression actuelle (étapes validées)  
+
+| Module / notion | Statut / commentaires |
+|------------------|------------------------|
+| HTML & CSS de base | ✔️ |
+| Flexbox / Grid / Layout | ✔️ |
+| Positionnement & z-index | ✔️ |
+| Formulaires HTML (inputs, labels, attributs) | ✔️ |
+| Validation HTML5 (required, type, minlength…) | ✔️ |
+| Validation JS “live” (mot de passe / confirmation) | ✔️ |
+| CSS pseudo-classes : `:focus`, `:valid`, `:invalid` | ✔️ |
+| JavaScript – variables, types, opérateurs | ✔️ |
+| Conditions (`if / else if / else`) | ✔️ |
+| Boucles (`for`, `while`) | ✔️ |
+| Arrays & Loops (parcours, somme, moyenne, max, filtre, map-like) | ✔️ |
+| Fonctions (déclaration, retour, pureté) | ✔️ |
+| Mini-projet console : Pierre-Feuille-Ciseaux | ✔️ |
 
 ---
 
-## ⏭️ Prochaines étapes
-- [ ] Ajouter la validation JS au formulaire (*password match*).  
-- [ ] Finaliser le projet *Sign-Up Form*.  
-- [ ] Passer au module suivant de The Odin Project (JavaScript basics).  
+## ⏭️ Étapes à venir  
+- Perfectionner le jeu avec interface (boutons / DOM)  
+- Mini-projet “Calculator” avec UI  
+- Introduction aux **strings avancées**, **objects**, **méthodes d’array** (`map`, `filter`, etc.)  
+- Suite du cursus JS + Frontend + Backend selon le chemin TOP  
 
 ---
 
-## 🔗 Rappel utile
-### Commandes Git
-```bash
-git status
-git add .
-git commit -m "Message clair"
-git push origin main
+## 📌 Règles d’apprentissage à garder  
+
+1. **Toujours comprendre et écrire soi-même** — pas de code copié aveuglément.  
+2. **Poser des questions à chaque bloc** : “Pourquoi ça marche ?”, “Que se passe-t-il si j’inverse ça ?”  
+3. **Refactoriser quand c’est nécessaire**, mais pas systématiquement dès le début.  
+4. **Retourner sur les notions faibles** (répétition espacée) pour les ancrer.  
+5. **Toujours distinguer la logique (JS) du style (CSS) / structure (HTML)**.  
+
+---
+
+## 🔧 Git / workflow  
+- `git add .` → ajouter tous les fichiers modifiés  
+- `git commit -m "message clair"` → commit avec message significatif  
+- `git push origin main` → envoyer vers GitHub  
+- Mettre à jour le README après chaque grand jalon accompli  
+
