@@ -23,8 +23,10 @@ function checkPassword(){
 password.addEventListener("input", checkPassword);
 confirm.addEventListener("input", checkPassword);
 
-form.addEventListener("submit", (event) => checkPassword(){
+form.addEventListener("submit", (event) => {
+    checkPassword();
     if(password.value !== confirm.value){
-     event.preventDefault()   
+        event.preventDefault();
     }
 });
+
