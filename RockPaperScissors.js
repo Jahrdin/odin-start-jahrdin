@@ -1,3 +1,8 @@
+const buttons = document.querySelectorAll("button");
+let score = document.querySelector(".score");
+let playerScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
   const choices = ["rock", "paper", "scissors"];
   const randomIndex = Math.floor(Math.random() * 3);
@@ -19,22 +24,26 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-function game() {
-  let playerScore = 0;
-  let computerScore = 0;
-  for (let i = 0; i < 5; i++) {
-    playerSelection = prompt();
-    const result = playRound(playerSelection);
-    console.log(result);
+function handleClick(playerChoice){
+  const result = playRound(playerChoice)
     if (result.includes("You win!")) {
-      playerScore++;
-    } else if (result.includes("You lose!")) {
-      computerScore++;
-    }
+    playerScore++;
+  } else if (result.includes("You lose!")) {
+    computerScore++;
   }
-  if (playerScore > computerScore) {
-    return "You win the game!";
-  } else if (computerScore > playerScore) {
-    return "You lose the game!";
-  } else return "It's a tie overall!";
+
+  score.textContent = `${result} | Player: ${playerScore} – Computer: ${computerScore}`;
+
+    if (playerScore === 5) {
+    score.textContent = "You win the game!";
+  } else if (computerScore === 5) {
+    score.textContent = "You lose the game!";
+  }
 }
+
+buttons.forEach(button => {
+  button.addEventListener("click", (e) => {
+    const playerChoice = e.target.dataset.choice;
+    handleClick(playerChoice);
+  });
+});
